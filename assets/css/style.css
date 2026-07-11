@@ -20,6 +20,31 @@ body{
     font-weight: 300;
 }
 
+.amber-glow {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: #fff;
+}
+
+.amber-glow::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: radial-gradient(
+        125% 125% at 50% 90%,
+        #ffffff 40%,
+        #b37121 100%
+    );
+    background-size: 100% 100%;
+}
+
+.amber-glow > * {
+    position: relative;
+    z-index: 1;
+}
+
 .heading-font{
     font-family: 'Anton', sans-serif;
     line-height: 1.5;
@@ -205,4 +230,78 @@ body{
 .whatsapp-btn{
     background: #25d366;
     bottom: 10px;
+}
+
+
+.cotton-candy-bg {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.cotton-candy-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: linear-gradient(
+        45deg,
+        #FFB3D9 0%,
+        #FFD1DC 20%,
+        #FFF0F5 40%,
+        #E6F3FF 60%,
+        #D1E7FF 80%,
+        #C7E9F1 100%
+    );
+}
+
+.cotton-candy-bg > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.package ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.package ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.package ul li:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "\F2E5";
+    font-family: "remixicon";
+    color: #F60820;
+    animation: arrowMove 1s infinite linear;
+}
+
+@keyframes arrowMove {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(5px);
+        /* move right */
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

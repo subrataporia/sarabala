@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sarabala Event Management</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'marquee': 'marquee 30s linear infinite',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        marquee: {
+                            '0%': { transform: 'translate3d(0, 0, 0)' },
+                            '100%': { transform: 'translate3d(-50%, 0, 0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="amber-glow">
+    <section class="relative pt-[200px] pb-[70px] z-10">
+        <nav class="navMenu absolute inset-x-4 lg:inset-x-10 top-3 lg:top-6 z-[1000] flex justify-between items-center navigation">
+            <a href="index.html"><img src="assets/images/logo.webp" alt="" class="h-12 lg:h-[60px]"></a>
+            <!-- Menu Toggle -->
+            <label for="menubrop" class="bartoggle"><i class="iconoir-menu"></i></label>
+            <input type="checkbox" id="menubrop" class="hidden">
+            <!-- Menu -->
+            <ul class="NavMenu">
+                <label for="menubrop" class="bartoggle !absolute right-3 top-3"><i class="iconoir-xmark"></i></label>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">
+                        Banquet
+                        <label for="droplist2" class="toggle"><i class="iconoir-nav-arrow-down"></i></label>
+                    </a>
+                    <input type="checkbox" id="droplist2" class="hidden">
+                    <!-- First Dropdown -->
+                    <ul class="dropdown-1">
+                        <li><a href="#">VCCCH Banquet</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Panjika
+                        <label for="droplist4" class="toggle"><i class="iconoir-nav-arrow-down"></i></label>
+                    </a>
+                    <input type="checkbox" id="droplist4" class="hidden">
+                    <!-- First Dropdown -->
+                    <ul class="dropdown-1">
+                        <li><a href="#">Marriage</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#"> Catering
+                        <label for="droplist1" class="toggle"><i class="iconoir-nav-arrow-down"></i></label>
+                    </a>
+                    <input type="checkbox" id="droplist1" class="hidden">
+                    <!-- First Dropdown -->
+                    <ul class="dropdown-1">
+                        <li><a href="#">Gold Package</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#"> Photography
+                        <label for="droplist1" class="toggle"><i class="iconoir-nav-arrow-down"></i></label>
+                    </a>
+                    <input type="checkbox" id="droplist1" class="hidden">
+                    <!-- First Dropdown -->
+                    <ul class="dropdown-1">
+                        <li><a href="#">Pre Wedding</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#"> Makeup
+                        <label for="droplist1" class="toggle"><i class="iconoir-nav-arrow-down"></i></label>
+                    </a>
+                    <input type="checkbox" id="droplist1" class="hidden">
+                    <!-- First Dropdown -->
+                    <ul class="dropdown-1">
+                        <li><a href="#">Bridal</a></li>
+                        <li><a href="#">Party</a></li>
+                        <li><a href="#">Haldi</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Florist</a></li>
+            </ul>
+
+
+        </nav>
+        <div class="text-black relative z-10">
+            <div class="max-w-7xl mx-auto text-center space-y-4 lg:space-y-8">
+                <h1 class="text-4xl lg:text-6xl font-bold">VCCCH Banquet Gate 1</h1>
+                <p>Vidyasagar Central Club Community Hall is an extraordinary all-purpose banquet located at Baghajatin, Kolkata. As one of the best budget wedding venues in South Kolkata, Vidyasagar Central Club Community Hall excels at hosting any festivities and special occasions on your behalf. We provide various decoration services like balloon decoration, theme parties, stage decoration, catering services and much more.</p>
+                <p>In addition, our banquet rooms provide tempting packages of several services, such as food, décor, event management, and much more. The Vidyasagar Central Club Community Hall is your one-stop shop if you want to add flair to your festivities with the correct concepts, inventions, and decorations.</p>
+                <div class="multiple-slider -mx-2">
+                    <div class="px-2">
+                        <img src="assets/images/banquet/VCCCH.jpg" alt="VCCCH Banquet" class="h-[180px] w-full rounded-xl object-cover">
+                    </div>
+                    <div class="px-2">
+                        <img src="assets/images/banquet/ERMS.jpg" alt="ERMS Banquet" class="h-[180px] w-full rounded-xl object-cover">
+                    </div>
+                    <div class="px-2">
+                        <img src="assets/images/banquet/Aguan.jpg" alt="Aguan Banquet" class="h-[180px] w-full rounded-xl object-cover">
+                    </div>
+                    <div class="px-2">
+                        <img src="assets/images/banquet/VCCCH.jpg" alt="VCCCH Banquet" class="h-[180px] w-full rounded-xl object-cover">
+                    </div>
+                    <div class="px-2">
+                        <img src="assets/images/banquet/ERMS.jpg" alt="ERMS Banquet" class="h-[180px] w-full rounded-xl object-cover">
+                    </div>
+                    <div class="px-2">
+                        <img src="assets/images/banquet/Aguan.jpg" alt="Aguan Banquet" class="h-[180px] w-full rounded-xl object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-10 lg:pb-20 relative">
+        <div class="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-stretch">   
+            <div class="col-span-1 lg:col-span-2 text-center">
+                <h2 class="text-xl lg:text-3xl font-bold">Package Details</h2>
+            </div>
+            <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-[0_8px_40px_rgba(0,0,0,0.08)] overflow-hidden flex flex-col h-full">
+                <h4 class="p-2 lg:p-3 text-lg text-white font-semibold text-center bg-amber-600">Marriage</h4>
+                <div class="p-4 lg:p-6 custom-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th class="text-end">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12 hrs (6a.m. to 6p.m.)</td>
+                                <td>Kitchen entry from 7a.m.</td>
+                                <td class="text-end font-bold">145000</td>
+                            </tr>
+                            <tr>
+                                <td>12 hrs (12p.m. to 12a.m.)</td>
+                                <td>Kitchen entry from 7a.m.</td>
+                                <td class="text-end font-bold">150000</td>
+                            </tr>
+                            <tr>
+                                <td>12 hrs (6p.m. to 6a.m.)</td>
+                                <td>Kitchen entry from 7a.m.</td>
+                                <td class="text-end font-bold">150000</td>
+                            </tr>
+                            <tr>
+                                <td>22 hrs (8a.m. to 6a.m.)</td>
+                                <td>Kitchen entry from 7a.m.</td>
+                                <td class="text-end font-bold">175000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-[0_8px_40px_rgba(0,0,0,0.08)] overflow-hidden flex flex-col h-full">
+                <h4 class="p-2 lg:p-3 text-lg text-white font-semibold text-center bg-amber-600">Reception</h4>
+                <div class="p-4 lg:p-6 custom-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th class="text-end">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12 hrs (6a.m. to 6p.m.)</td>
+                                <td>Kitchen entry from 7a.m.</td>
+                                <td class="text-end font-bold">145000</td>
+                            </tr>
+                            <tr>
+                                <td>12 hrs (12p.m. to 12a.m.)</td>
+                                <td>Kitchen entry from 7a.m.</td>
+                                <td class="text-end font-bold">150000</td>
+                            </tr>
+                            <tr>
+                                <td>12 hrs (6p.m. to 6a.m.)</td>
+                                <td>Kitchen entry from 7a.m.</td>
+                                <td class="text-end font-bold">150000</td>
+                            </tr>
+                            <tr>
+                                <td>22 hrs (8a.m. to 6a.m.)</td>
+                                <td>Kitchen entry from 7a.m.</td>
+                                <td class="text-end font-bold">175000</td>  
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-10 lg:pb-20 relative">
+        <div class="max-w-7xl w-full mx-auto bg-white shadow-[0_8px_40px_rgba(0,0,0,0.08)] rounded-3xl overflow-hidden p-4 lg:p-6 termCondition">
+            <h3 class="text-center font-semibold text-2xl lg:text-3xl">Terms & Conditions</h3>
+            <p>Booking & Payment Policy</p>
+            <ul>
+                <li>In case of extension of time, charges will be levied. Extension charges will be 5000/- per hour applicable if the booking is extended to the following day, subject to availability.</li>
+                <li>The hall is available for all types of social functions on a first-come-first-serve basis. The Hall can be booked on payment of 50% of the total amount and all applicable govt. taxes and levies, payable in advance to 'Pradhan Banquet Group/Sarabala Event Enterprises/Sabcheysasta Dot Com.'. The balance 50% shall be payable 30 days before the date of the scheduled function.</li>
+            </ul>
+            <p>Booking Revision Fees</p>
+            <p>Rs. 10,000/- will be charged for any change/revision in booking dates, subject to availability, at the prevailing rates on that day.</p> 
+            <p>Cancellation &amp; Postponement Policy</p>
+            <ul>
+                <li>No cancellation of booking is allowed. Postponement can only be requested at least <strong>2 months prior</strong> to the event date. Requests made within 2 months of the occasion will not be entertained.</li>
+                <li>Postponed bookings can be rescheduled at any banquet of <strong>Pradhan Banquet Group</strong>, subject to availability.</li>
+                <li>If the client wishes to postpone the event instead of cancelling, the new date must be selected within <strong>one year</strong> from the originally booked date. An additional charge of <strong>₹10,000</strong> will be applicable for postponement.</li>
+                <li>For postponement, the booking will be confirmed only after full payment is made as per the <strong>prevailing rates</strong> applicable on the new date.</li>
+                <li>In case of cancellation due to unforeseen natural causes, <strong>no refund</strong> will be provided. However, the client may reschedule the event within <strong>one year</strong> from the original booking date, subject to venue availability.</li>
+            </ul>
+            <p>Usage Rules</p>
+            <ul>
+                <li>All articles, furniture, and fixtures must be used with proper care and caution and handed over to the Company representative in good condition before vacating the Hall.</li>
+                <li>The User must inspect the premises along with a Company representative before taking possession. The premises must be vacated in the same condition as received. Any damage or discrepancy will be charged as determined by Pradhan Banquet Group.</li>
+                <li>The designated kitchen area shall be used only for cooking with gas cylinders. Use of coal, wood, electric heaters, or similar items is strictly prohibited. The lift cannot be used for carrying any goods.</li>
+                <li>Consumption of alcohol or intoxicating items, smoking, and creating public nuisance inside the premises is strictly prohibited.</li>
+                <li>No live food counters are allowed inside the building.</li>
+                <li>If alcohol is to be served, the User must obtain all necessary Government permissions at their own cost and submit the original approvals to Pradhan Banquet Group before the event.</li>
+                <li>Spitting paan or gutkha is strictly prohibited. Any such act will attract a penalty of ₹5,000.</li>
+                <li>Loudspeakers, vocal performances, or orchestras must comply with the Sound Pollution Rules of the Government of West Bengal. Permission for copyrighted music must be obtained and submitted 24 hours prior to the event.</li>
+                <li>Use of crackers or fireworks anywhere inside or around the premises is strictly prohibited. Any violation will result in immediate stoppage of the event and reporting to the concerned authorities.</li>
+                <li><strong>Only empanelled vendors (Florist, Decorator, Electrician, Sound System, Water, Mocktail, DJ, Cold Fire, Smoke, Sanai&nbsp;etc.) are allowed. Outside vendors are not permitted. Sound systems cannot be used outside the building.</strong></li>
+                <li>Noise related to bands, DJ, Barat, or similar activities is strictly prohibited outside the venue premises to avoid disturbance to nearby residents.</li>
+                <li>Decoration packages include the latest yearly upgraded designs with artificial flowers only. Any customization will incur additional charges.</li>
+                <li>The User is responsible for proper disposal and removal of all waste and garbage generated by their vendors. Appropriate bins must be used until disposal.</li>
+                <li>Vendor personnel are not allowed to stay inside the premises after 12:00 midnight.</li>
+                <li>All vendor materials must be removed from the premises before 12:00 midnight on the day of the function.</li>
+                <li>Pradhan Banquet Group shall not be responsible for any theft, loss, burglary, or any untoward incident.</li>
+                <li>The lift is strictly for guest movement only and cannot be used for transporting materials.</li>
+                <li>All decorations must be installed using self-standing structures or provided hooks. Use of nails, glue, or any material that may damage the walls is strictly prohibited.</li>
+                <li>Electricity charges are included in the package. Air-conditioning will operate for 6 hours only. Additional usage will be charged at ₹3,000 per hour. During power failure, lights, fans, and lifts will operate, but air-conditioners will not function.</li>
+                <li>The User shall indemnify the Company against any penalties, damages, or legal costs arising from violation of rules, including sound pollution, music permissions, liquor licensing, or any related statutory requirements.</li>
+            </ul>
+            <p>Force Majeure</p>
+            <p>While every effort is made to ensure smooth functioning, the Company will have no liability whatsoever in the event of inconvenience, damage, loss or injury faced by any User or User's vendors, guests, invitees or associates, owing to situations beyond Pradhan Banquet Group control, including rains, storms, floods, riots, acts of violence, motivated damage, theft, war, natural calamities or other acts of God. Pradhan Banquet Group reserves the Right of Cancellation of booking at any time due to unavoidable circumstances. This time 100% advance amount will be refunded.</p>
+            <p>অনুষ্ঠান বাড়ির সাধারণ নিয়মাবলী<br>
+                ১। অনুষ্ঠান বাড়ির টোটাল প্যাকেজের ৫০% এবং জি এস টি অ্যাডভান্স পেমেন্ট দিয়ে বুকিং করতে হবে এবং বাকি ৫০% অনুষ্ঠানের এক মাস পূর্বে পেমেন্ট করতে হবে।<br>
+                ২। অনুষ্ঠান বাড়ির বুকিং বাতিল করলে কোনো টাকা ফেরত হবে না, অন্যথায় বুকিং পোস্টপন্ড &nbsp;করতে পারবেন। পোস্টপন্ড করলে বুকিং তারিখ হতে অতিরিক্ত আরও এক বছরের সময় পাবেন, সেক্ষেত্রে বুকিংয়ের পুরো টাকা এডজাস্ট করা হবে। তবে নতুন ডেট ফাইনাল করার সময় অনুষ্ঠান বাড়ির উপলব্ধ তারিখ দেখে নতুন তারিখ ঠিক করতে হবে এবং ওই সময় (তারিখ ঠিক করার সময়) নতুন রেটে বাকি টাকা পেমেন্ট করতে হবে। পোস্টপন্ড এর জন্য ১০,০০০/- এক্সট্রা পেমেন্ট করতে হবে।<br>
+                ৩। আমাদের যেকোন অনুষ্ঠান বাড়িতে ডেকোরেটর, লাইট, ফ্লাওয়ার (যেকোন ডেকোরেশনের ভেন্ডার), সাউন্ড সিস্টেম, ডিজে, কোল্ড ফায়ার, ড্রাই আইস, সানাই ইত্যাদির ভেন্ডার বাইরে থেকে আনা যাবে না।<br>
+                ৪। অনুষ্ঠান দিনের ক্যাটারিং বুকিং করার পরে ক্যাটারিং কর্তৃপক্ষ অনুষ্ঠান বাড়ির সমস্ত নিয়মাবলী জানিয়ে ক্যাটারিং বুকিং করবেন। অনুষ্ঠান দিনের আগে ক্যাটারিং কর্তৃপক্ষ যেকোন একজনকে নিয়ে অনুষ্ঠান বাড়িতে আসতে হবে এবং অনুষ্ঠান বাড়ির কোথায় কী ভাবে তারা সেটআপ করবেন তা বুঝিয়ে যেতে হবে, যাতে উভয়ের কাজ করতে কোনো অসুবিধা না হয় বা ভুল বোঝাবুঝি না হয়। অনুষ্ঠান বাড়ির সাধারণ নিয়মাবলীর এক কপি ক্যাটারিং কর্তৃপক্ষকে অবশ্যই দিতে হবে। অনুষ্ঠান বাড়ির নিজস্ব এরিয়ার বাইরে ক্যাটারিং কর্তৃপক্ষ কোনো জিনিস নিয়ে কাজ করতে পারবেন না।<br>
+                ৫। অনুষ্ঠান বাড়িতে লিফট থাকলে তাতে কোন ক্যাটারিং বা অন্য কোনো মাল তোলা যাবে না।<br>
+                ৬। বিল্ডিংয়ের বাইরে কোনো সাউন্ড সিস্টেম চালানো যাবে না। রাত ১০টার পর সাউন্ড সিস্টেম চালানো যাবে না।<br>
+                ৭। &nbsp;<strong>বিদ্যাসাগর সেন্ট্রাল ক্লাব কমিউনিটি হল গেট ১ এবং গেট ২ তে &nbsp; জল এবং মকটেল (Mocktail) বাইরের ভেন্ডার থেকে নেওয়া যাবে না । কেবল গণপতি কাটরার (Mobile Number: 9239549277 or&nbsp; 7003261859) এর থেকেই জল এবং মকটেল (Mocktail) নিতে হবে ।&nbsp;</strong>ক্যাটারিং এর কাজ বাইরের ভেন্ডার দিয়েও করাতে পারেন ।<br>
+                ৮। ক্যাটারিংয়ের পরিত্যক্ত সমস্ত জিনিস নির্দিষ্ট জায়গায় ফেলতে হবে। ক্যাটারিংয়ের কোন স্টক বা কোন মাল বুকিংয়ের দিন সকাল ৮টার আগে ঢোকাতে পারবে না। বুকিংয়ের দিন ক্যাটারিংয়ের কোন মাল বা স্টক রাতে রাখতে বা থাকতে পারবে না।<br>
+                ৯। বিল্ডিংয়ের ভিতরে (কিচেন ব্যতীত) কোন লাইভ কাউন্টার করা যাবে না।<br>
+                ১০। ক্যাটারিংয়ের সমস্ত জিনিস (বুকিং সময় অনুযায়ী) বিকাল ৫টার মধ্যে (যদি বিকাল ৪টা অবধি বুকিং থাকে) বা রাত ১ টার মধ্যে (যদি রাত ১২টা বা সকাল ৬টা অবধি বুকিং থাকে) অনুষ্ঠান বাড়ি হতে নিয়ে যেতে হবে। অতিরিক্ত টাইম দেওয়া যাবে না। যদি দেরি হয় তাহলে ৫০০০ (পাঁচ হাজার) টাকা প্রতি ঘন্টা পে করতে হবে, তবে তা সর্বোচ্চ দুই ঘন্টার বেশি দেওয়া যাবে না।<br>
+                ১১। অনুষ্ঠান বাড়িতে কোনো টেকনিক্যাল সমস্যা দেখা দিলে তার জন্য কোনো প্রকার ঝামেলা ব্যবহার করা যাবে না। কর্তৃপক্ষের সঙ্গে সহযোগিতা করতে হবে।<br>
+                ১২। ধূমপান বা নেশা জাতীয় কোন কিছু অনুষ্ঠান বাড়ির পুরো এরিয়ার মধ্যে করা যাবে না। অনুষ্ঠান বাড়িতে কাঠ কয়লার ব্যবহার করা যাবে না।<br>
+                ১৩। অনুষ্ঠানের এক দিন পূর্বে &nbsp;২০,০০০/- (কুড়ি হাজার টাকা) সিকিউরিটি হিসেবে অনুষ্ঠান বাড়ির নির্দিষ্ট কেয়ারটেকারের কাছে জমা দিয়ে যেতে হবে। উক্ত অনুষ্ঠানের দিন যদি অনুষ্ঠান বাড়ির থেকে কোন প্রকার ক্ষতি হয় বা কেউ কিছু ফেলে বা অন্য কিছু (অতিথি বা ক্যাটারিং স্টাফ) নিয়ে যায় তার পুরো মূল্য কাটিয়ে অনুষ্ঠানের শেষে ফেরত দেওয়া হবে, আর যদি কিছু ক্ষতি না হয় তাহলে পুরো ২০,০০০/- (কুড়ি হাজার টাকা) অনুষ্ঠানের শেষে ফেরত দেওয়া হবে।<br>
+                ১৪। অনুষ্ঠান বাড়ির পাশাপাশি সর্বদা খেয়াল রাখতে হবে অনুষ্ঠান বাড়ির পাশাপাশির যারা বসবাস করেন বা পথচারী মানুষের কোনো রকম অসুবিধা না হয়।<br>
+                ১৫। অনুষ্ঠান বাড়ির সমস্ত বিল অনুষ্ঠানের দিনের এক মাস পূর্বে পেমেন্ট করে দিতে হবে।<br>
+                ১৬। অনুষ্ঠান বাড়ির সমস্ত নিয়ম মেনে অনুষ্ঠান করতে হবে। নির্দিষ্ট সময়ের মধ্যে অনুষ্ঠান শেষ করতে হবে।</p>
+        </div>
+    </section>
+
+    <section class="pb-10 lg:pb-20 relative">
+        <div class="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-10 items-stretch">   
+            <div class="col-span-1 lg:col-span-3 text-center">
+                <h2 class="text-xl lg:text-3xl font-bold">Other Details</h2>
+            </div>
+            <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-[0_8px_40px_rgba(0,0,0,0.08)] overflow-hidden">
+                <h4 class="p-3 lg:p-4 text-lg text-white font-semibold text-center bg-[#175eda]">Decorator Items</h4>
+                <div class="p-4 lg:p-6 custom-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Qty</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Banquet Chair/Plastick chair with cover</td>
+                                <td>75</td>
+                            </tr>
+                            <tr>
+                                <td>Banquet Sofas</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Square Tables (Phrill/Cover)</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>Round Tables (Phrill/Cover)</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Platform with synthetic carpet</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Wooden Joint Singhasan</td>
+                                <td>1</td>
+                            <tr>
+                                <td>Wooden Joint Singhasan</td>
+                                <td>1</td>
+                            </tr></tr>
+                            <tr>
+                                <td>Wooden single Singhasan</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Still Sofa</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Green grass carpet</td>
+                                <td>Lwan</td>
+                            </tr>
+                            <tr>
+                                <td>Shilnorda-1, Jangyakunda-1, Piri-2</td>
+                                <td>One set</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-[0_8px_40px_rgba(0,0,0,0.08)] overflow-hidden">
+                <h4 class="p-3 lg:p-4 text-lg text-white font-semibold text-center bg-[#175eda]">Electric</h4>
+                <div class="p-4 lg:p-6 custom-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Service</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Spot light small</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Rop light</td>
+                                <td>Common</td>
+                            </tr>
+                            <tr>
+                                <td>Small halo zine</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Spot light 30wat</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>Sound System-only Sanai/light music</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Sound Proof Generator Backup</td>
+                                <td>Common</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="bg-white/80 backdrop-blur-md rounded-xl shadow-[0_8px_40px_rgba(0,0,0,0.08)] overflow-hidden">
+                <h4 class="p-3 lg:p-4 text-lg text-white font-semibold text-center bg-[#175eda]">Flower</h4>
+                <div class="p-4 lg:p-6 custom-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Service</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Main Entrance and passage</td>
+                                <td>Common</td>
+                            </tr>
+                            <tr>
+                                <td>Gate</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Background-1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Background -2</td>
+                                <td>Y/N</td>
+                            </tr>
+                            <tr>
+                                <td>Mandap</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Haldi background (only marriage)</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Stand Arrangement</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Name Board-Flex</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>            
+    </section>
+
+    <footer class="bg-[#142624] text-white pt-20">
+        <div class="max-w-7xl mx-auto px-3 flex flex-col lg:flex-row gap-10 lg:gap-20 mb-10">
+            <!-- Brand -->
+            <div class="lg:w-2/5 w-full">
+                <img src="assets/images/logo.webp" class="h-12 mb-6" alt="Brand Logo">
+                <p class="text-white/90 text-sm leading-relaxed mb-4">Celebrate with Sarabala Event Enterprises. Whether it’s
+                    a wedding, birthday celebration, corporate meeting, or any special occasion, our experienced team is
+                    dedicated to transforming your vision into reality.</p>
+                    <div class="flex items-center gap-4 mb-4">
+                        <a href="tel:+91 8017129924" class="text-yellow-500 hover:text-white font-semibold">+91 8017129924</a> 
+                        <a href="tel:+91 8017177956" class="text-yellow-500 hover:text-white font-semibold">+91 8017177956</a> 
+                        <a href="tel:+91 8617711900" class="text-yellow-500 hover:text-white font-semibold">+91 8617711900</a>
+                    </div>
+            </div>
+
+            <div class="lg:w-3/5 w-full grid grid-cols-1 lg:grid-cols-3 gap-10 mb-16">
+                <div>
+                    <h5 class="font-semibold mb-5 text-white">Services</h5>
+                    <ul class="space-y-2 text-white/90 text-xs">
+                        <li><a href="#" class="hover:text-yellow-600 transition">Wedding</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">Anniversary</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">Annaprashan</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">Birthday</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">Upanayan</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">Funeral</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">Get Together</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">Engagement</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-semibold mb-5 text-white">Location</h5>
+                    <ul class="space-y-2 text-white/90 text-xs">
+                        <li><a href="#" class="hover:text-yellow-600 transition">Nikunja Banquet</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">Upalakshya Banquet</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">4MTPS Banquet</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">Avinandan Banquet</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">Aguan Banquet</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">VCCCH Banquet Gate 1</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">VCCCH Banquet Gate 2</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">ERMS Banquet Gate 1</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">ERMS Banquet Gate 2</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">Mayer Bari</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-semibold mb-5 text-white">Quick Links</h5>
+                    <ul class="space-y-2 text-white/90 text-xs">
+                        <li><a href="#" class="hover:text-yellow-600 transition">Home</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">Online Booking</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">Blogs</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">Contact</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">Terms &amp; Condition</a></li>
+                        <li><a href="#" class="hover:text-yellow-600 transition">Disclaimer</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- Trust Row -->
+        <div class="bg-black py-6">
+            <div
+                class="flex flex-col md:flex-row items-center justify-center sm:justify-between text-sm text-white gap-4 max-w-7xl mx-auto">
+                <p>© 2026 Sarabala Event Enterprises | All Rights Reserved.</p>
+                <div class="sm:flex hidden items-center gap-5">
+                    <a href="https://facebook.com" target="_blank"
+                        class="text-white hover:text-blue-500 transition-colors duration-300">
+                        <i class="ri-facebook-fill text-xl"></i>
+                    </a>
+
+                    <a href="https://instagram.com" target="_blank"
+                        class="text-white hover:text-pink-500 transition-colors duration-300">
+                        <i class="ri-instagram-line text-xl"></i>
+                    </a>
+
+                    <a href="https://youtube.com" target="_blank"
+                        class="text-white hover:text-red-500 transition-colors duration-300">
+                        <i class="ri-youtube-fill text-xl"></i>
+                    </a>
+
+                    <a href="https://linkedin.com" target="_blank"
+                        class="text-white hover:text-blue-600 transition-colors duration-300">
+                        <i class="ri-linkedin-fill text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Call -->
+
+    <a href="tel:+919876543210" class="floating-btn call-btn">
+        <i class="ri-phone-fill"></i>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/919876543210" target="_blank" class="floating-btn whatsapp-btn">
+        <i class="ri-whatsapp-fill"></i>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/scroller.js"></script>
+    <!-- <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script> -->
+    <script>
+        // Sticky Header
+        var nav = document.querySelector(".navigation");
+        window.onscroll = function () {
+            if (document.documentElement.scrollTop > 0) {
+                nav.classList.add("scroll-on");
+            }
+            else {
+                nav.classList.remove("scroll-on");
+            }
+        }
+        // Single Slider
+        $('.single-slider').slick({
+            dots: false,
+            arrows: false,
+            prevArrow: '<button type="button" class="slick-prev"><i class="ri-arrow-left-line"></i></button>',
+            nextArrow: '<button type="button" class="slick-next"><i class="ri-arrow-right-line"></i></button>',
+            autoplay: true,
+            autoplaySpeed: 3000,
+            pauseOnHover: false
+        });
+        // Multiple Slider
+        $('.multiple-slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: false,
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev"><i class="ri-arrow-left-line"></i></button>',
+            nextArrow: '<button type="button" class="slick-next"><i class="ri-arrow-right-line"></i></button>',
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll(".faq-item");
+        faqItems.forEach(item => {
+            const btn = item.querySelector(".faq-btn");
+            const content = item.querySelector(".faq-content");
+            const icon = item.querySelector("i");
+            // First item open
+            if (item.classList.contains("active")) {
+                content.style.maxHeight = content.scrollHeight + "px";
+                icon.classList.remove("ri-add-line");
+                icon.classList.add("ri-subtract-line");
+            }
+            btn.addEventListener("click", () => {
+                const isActive = item.classList.contains("active");
+                // Close all
+                faqItems.forEach(el => {
+                    el.classList.remove("active");
+                    el.querySelector(".faq-content").style.maxHeight = null;
+                    const i = el.querySelector("i");
+                    i.classList.remove("ri-subtract-line");
+                    i.classList.add("ri-add-line");
+                });
+                // Open clicked item
+                if (!isActive) {
+                    item.classList.add("active");
+                    content.style.maxHeight = content.scrollHeight + "px";
+
+                    icon.classList.remove("ri-add-line");
+                    icon.classList.add("ri-subtract-line");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
